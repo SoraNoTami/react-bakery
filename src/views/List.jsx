@@ -13,6 +13,11 @@ export class List extends React.Component {
         return(
             <div>
                 List
+                <ul>
+                    {this.props.items.map(function (item){
+                        return(<li>{item.name}, {item.price}</li>)
+                    })}
+                </ul>
             </div>
         )
     }
